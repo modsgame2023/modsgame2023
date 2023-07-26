@@ -1,0 +1,34 @@
+apiVersion: v1alpha1
+kind: "ConfigMap"
+metadata:
+  name: system-default
+data:
+  user: |
+    {
+      "allowRegistration": false,
+      "defaultRole": ""
+    }
+  theme: |
+    {
+      "active": "theme-earth"
+    }
+  routeRules: |
+    {
+      "categories": "categories",
+      "archives": "archives",
+      "post": "/archives/{slug}",
+      "tags": "tags"
+    }
+  codeInjection: |
+    {
+     "globalHead": "",
+     "footer": ""
+    }
+  post: |
+    {
+      "review": false
+    }
+  menu: |
+    {
+      "primary": "primary"
+    }
